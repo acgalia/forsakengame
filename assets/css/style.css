@@ -1,0 +1,501 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+#video {
+	width: 100%;
+	height: 50vh;
+}
+
+#landing {
+	height: 100vh;
+}
+
+body#landing {
+	background-image: url(../images/uldrenaim.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+/* 	position: relative;*/
+}
+
+.jumbotron hr {
+	display: block;
+	height: 2px;
+	margin: 1em 0;
+}
+
+.jumbotron {
+	background-color: transparent;
+	height: 100vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+	margin-bottom: 0;
+}
+
+.jumbotron h1 {
+	color: #141414;/*black*/
+	letter-spacing: 3px;
+}
+
+#jumbotron-landing {
+	margin: 0 auto;
+	width: 100%;	
+}
+
+.navbar button {
+	border: 1px solid white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#landing-button:hover {
+	color: #141414;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.halo-dev {
+	position: absolute;
+	bottom: 20%;
+	right: 40%;
+}
+
+@font-face {
+	font-family: "thisfont";
+	src: url(../fonts/pdark.ttf);
+}
+
+#guardians {
+	font-family: "thisfont";
+	color: #f8f9fa;
+	/*background: rgba(66, 69, 96, 0.2);*/
+}
+
+@font-face {
+	font-family: "thisfont2";
+	src: url(../fonts/halo3.ttf);
+}
+
+#halo {
+	font-size: 2em;
+	font-family: "thisfont2";
+}
+
+h4 {
+	/*color: #131127;*/
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10%;
+}
+
+/*end landing page*/
+
+.homevideo {
+	width: 100%;
+	height: 80%;
+}
+
+
+/*start navbar/footer*/
+.ff {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+a {
+	color: #f8f9fa;/*white*/	
+}
+
+.navbar-nav a:hover {
+	color: #141414;
+	background-color: #f8f9fa;
+	border-radius: 10%;
+}
+
+#navbarNavAltMarkup .active {
+	color: #141414;
+	background-color: #f8f9fa;
+	border-radius: 10%;
+}
+
+.navbar {
+	font-family: Helvetica;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fa {
+	font-size: 1.5em;
+	color: #f8f9fa;
+}
+
+.fa:hover {
+	color: #141414;
+	background-color: #f8f9fa;
+	border-radius: 10%;
+}
+
+#home,
+#about,
+#contact-page {
+	font-family: Helvetica;
+	color: #f8f9fa;
+}
+
+.backtoptop {
+	width: 100%;
+}
+
+.backtop {
+	background: #101010;
+	color: gray;
+}
+
+footer {
+	min-height: 10vh;
+	background: #101010;
+	color: white;
+}
+
+.sidenav {
+	background: transparent;
+	padding-left: 1em; 
+	width: 10%;
+	position: fixed;
+	height: 100%;
+	z-index: 10;
+}
+
+ul > li {
+	list-style: none;
+	padding-top: 1em;
+}
+
+li > a {
+	color: gray;
+}
+
+li > a:hover {
+	background-color: gray;
+	text-decoration: none;
+	color: #141414;
+}
+/*end navbar/footer*/
+
+/*start home page*/
+.container-video {
+	height: 100%;
+	margin-bottom: 0;
+}
+
+.chooseclass {
+	background: #141414;
+	color: white;
+}
+
+.content1 {
+	height: 100%;
+}
+
+
+.warlock {
+	background: url("../images/warlock.png");
+	height: 39em;
+	width: 100%;
+  	background-size: 100%;
+  	background-position: center;
+  	/*background-position: center center;*/
+  	/*background-repeat: no-repeat;*/
+  	background-size: cover;
+  	/*transition: 5s;*/
+}
+
+
+.hunter {
+	background: url("../images/hunter.png");
+	height: 39em;
+	width: 100%;
+  	background-size: 100%;
+  	background-position: center;
+  	/*background-position: center center;*/
+  	/*background-repeat: no-repeat;*/
+  	background-size: cover;
+  	/*transition: 1s;*/
+}
+
+.titan {
+	background: url("../images/titan.png");
+	height: 39em;
+	width: 100%;
+  	background-size: 100%;
+  	background-position: center;
+  	/*background-position: center center;*/
+  	/*background-repeat: no-repeat;*/
+  	background-size: cover;
+  	/*transition: 1s;*/
+}
+
+.warlock:hover,
+.hunter:hover,
+.titan:hover {
+  background-size: 110%;  
+}
+
+.warlock:after,
+.titan:after {
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  white-space: pre-wrap;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0 2%;
+  content:attr(data-text);
+  transition: 1s;
+}
+
+.hunter:after {
+  position: absolute;
+  top: 0;
+  bottom: 90%;
+  left: 0;
+  right: 0;
+  white-space: pre-wrap;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0 2%;
+  content:attr(data-text);
+  transition: 1s;
+}
+
+.warlock:hover:after,
+.titan:hover:after {
+  opacity: 1;
+  top: 40%;
+  padding: 2%;
+}
+
+.hunter:hover:after {
+  opacity: 1;
+  bottom: 40%;
+  padding: 2%;
+}
+
+.warlock:first-line,
+.hunter:first-line,
+.titan:first-line {
+  color: #fff;
+  font-weight: bold;
+  font-size: 250%
+}
+
+#content2 {
+	height: 100vh;
+	background: url("../images/gambit2.jpg");
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed; 
+}
+
+.transparent-background {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+#content3 {
+	height: 100vh;
+	background: url("../images/enemies.png");
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+
+#content4 {
+	height: 50vh;
+	background: url("../images/gambit.jpg");
+	color: #9d8db5;
+	background-attachment: fixed;
+}
+
+.buy-game {
+	background: rgba(66, 69, 96, 0.7);
+}
+
+.buy-game:hover {
+	color: #F5F5F5;/*smoke white*/
+	background: #141414;
+	border: 1px solid #F5F5F5; 
+}
+
+#content5 {
+	height: 50vh;
+	background: #141414;
+}
+
+#carouselExampleIndicators {
+	width: 100%
+}
+	
+/*end home page*/
+/*start about page*/
+#devs {
+	background: #4a5083; /*blue*/
+}
+
+#about-content {
+	background: #141414;
+	color: gray;
+}
+
+#landing-about {
+	color: #141414;
+	font-size: 5em;
+	letter-spacing: 5px;
+}
+
+.fadeIn {
+	animation-duration: 5s;
+}
+
+.join {
+	width: 10em;
+}
+
+.join:hover {
+	border: 1px solid blue;
+	background: #6c757d;
+}
+
+
+#mission {
+	height: 100%;
+	border-right: 2px solid #141414;
+}
+
+#vision {
+	height: 100%;
+	border-left: 2px solid #141414;
+}
+
+.right-mission {
+	height: 27em;
+	width: 95%;
+	background-position: center;
+}
+
+.left-vision {
+	height: 27em;
+	width: 95%;
+	/*background-position: center;*/
+}
+
+/*end about page*/
+/*start contact page*/
+#contact-page {
+	height: 100%;
+	background:	url(../images/dreamingcity.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ /*	position: relative;*/
+}
+
+/*end contact page*/
+/*gallery page*/
+
+.carousel-item {
+	height: 25em;
+	width: 100%;
+}
+
+.gallery-page {
+	background: #141414;
+}
+
+.img-thumbnail:hover {
+	transform : scale(1.1);
+	border: 2px solid red;
+	transition: 0.6s ease;
+}
+/*end gallery page*/
+
+/*mobile*/
+@media only screen and (max-width: 400px) {
+
+.halo-dev {
+	position: absolute;
+	bottom: 15%;
+	right: 0.5%;
+	width: 100%;
+}
+
+.right-mission,
+.left-vision {
+	height: 350px;
+	width: 350px;
+}
+
+
+.box-content {
+	position: relative;
+	left: 5.5em;
+}
+
+.buy-the-game {
+	position: relative;
+	right: 3em;
+}
+
+.img-thumbnail {
+	height: 33%;
+	width: 100%;
+}
+
+.carousel-item {
+	height: 15em;
+	width: 100%;
+}
+
+}/*end mobile*/
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+.right-mission,
+.left-vision {
+	width: 740px;
+}
+
+
+.box-content {
+	position: relative;
+	left: 10em;
+}
+
+.halo-dev {
+	position: absolute;
+	bottom: 15%;
+	right: 27%;
+	width: 50%;
+}
+
+}
+/*end tablet*/
+
+/*desktop only*/
+@media only screen and (min-width: 1024px) {
+
+}/*end desktop*/

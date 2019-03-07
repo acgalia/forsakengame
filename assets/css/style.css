@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	font-family: 'Roboto Slab', serif;
 }
 
 #video {
@@ -196,7 +196,7 @@ li > a:hover {
 }
 
 .chooseclass {
-	background: #141414;
+	background: #696969;
 	color: white;
 }
 
@@ -249,7 +249,8 @@ li > a:hover {
 }
 
 .warlock:after,
-.titan:after {
+.titan:after,
+.hunter:after {
   position: absolute;
   top: 90%;
   bottom: 0;
@@ -264,7 +265,7 @@ li > a:hover {
   transition: 1s;
 }
 
-.hunter:after {
+/*.hunter:after {
   position: absolute;
   top: 0;
   bottom: 90%;
@@ -277,20 +278,21 @@ li > a:hover {
   padding: 0 2%;
   content:attr(data-text);
   transition: 1s;
-}
+}*/
 
 .warlock:hover:after,
-.titan:hover:after {
+.titan:hover:after,
+.hunter:hover:after {
   opacity: 1;
   top: 40%;
   padding: 2%;
 }
 
-.hunter:hover:after {
+/*.hunter:hover:after {
   opacity: 1;
   bottom: 40%;
   padding: 2%;
-}
+}*/
 
 .warlock:first-line,
 .hunter:first-line,
